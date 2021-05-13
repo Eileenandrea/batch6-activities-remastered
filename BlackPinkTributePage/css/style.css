@@ -1,0 +1,243 @@
+*,
+*:link,
+*:visited {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+.heading-primary-h1 {
+  font-family: "PRIMETIME", sans-serif;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  font-weight: 100;
+  color: pink; }
+  .heading-primary-h1--primarycolor {
+    background-color: black;
+    color: pink;
+    padding: 1rem 0; }
+
+.heading-secondary-h2 {
+  font-family: "PRIMETIME", sans-serif;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 100;
+  padding: 0.5rem 0 1rem 0;
+  color: pink; }
+
+.header-tertiary-h3 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: black;
+  color: white; }
+
+.paragraph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 500; }
+  .paragraph--white {
+    color: white; }
+
+.info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
+  color: #2e2e2e; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 3rem !important; }
+
+.u-margin-buttom-xsmall {
+  margin-bottom: 0.5rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 3rem !important; }
+
+.u-margin-top-xsmall {
+  margin-top: 0.5rem !important; }
+
+.navigation__list {
+  display: flex;
+  flex-direction: row;
+  margin-right: 8rem;
+  list-style: none; }
+
+.navigation__item:not(:last-child) {
+  margin-right: 3rem; }
+
+.navigation__links:link, .navigation__links:visited {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif; }
+
+.header {
+  height: 120vh;
+  background-image: radial-gradient(circle, rgba(255, 166, 252, 0.3) 20%, rgba(255, 148, 224, 0.25) 40%, rgba(255, 118, 216, 0.25) 60%, rgba(255, 89, 199, 0.25) 70%, rgba(0, 0, 0, 0.4) 100%), url(/images/Blackpinkheroimage.jpg);
+  background-size: cover;
+  background-position: 50% 40%;
+  position: static; }
+  .header__logo-container {
+    height: 8vw;
+    width: 25vw;
+    margin: auto;
+    background-color: black;
+    -webkit-mask-image: url(/images/BLACKPINK-Logo-Pink-PNG-removebg-preview-removebg-preview.png);
+    -webkit-mask-size: cover;
+    mask-image: url(/images/BLACKPINK-Logo-Pink-PNG-removebg-preview-removebg-preview.png);
+    mask-size: cover;
+    box-shadow: 10rem 20rem pink;
+    margin-top: -1rem; }
+
+.nav-bar {
+  height: 3.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem; }
+
+.logo-container {
+  height: 3.5rem;
+  margin-left: 3rem; }
+
+.logo-img {
+  height: 100%; }
+
+.card {
+  margin-top: 3rem;
+  display: block;
+  perspective: 1500px;
+  -moz-perspective: 1500px;
+  position: relative;
+  width: 250px;
+  height: 400px;
+  border-radius: 10px; }
+  .card__side {
+    border: solid black;
+    background-color: pink;
+    width: 250px;
+    height: 400px;
+    transition: all 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 10px; }
+    .card__side--front {
+      background-color: pink;
+      transition: all 0.5s; }
+      .card__side--front-img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        background-size: cover; }
+        .card__side--front-img__jennie {
+          background-image: linear-gradient(180deg, rgba(255, 166, 252, 0.2) 0%, rgba(255, 148, 224, 0.2) 35%, rgba(255, 89, 199, 0.2) 100%), url(/images/Blackpink-Jennie-cute.jpg); }
+        .card__side--front-img__lisa {
+          background-image: linear-gradient(180deg, rgba(255, 166, 252, 0.4) 0%, rgba(255, 148, 224, 0.4) 35%, rgba(255, 89, 199, 0.4) 100%), url(/images/Blackpink-Lisa-cute.jpg); }
+        .card__side--front-img__rose {
+          background-image: linear-gradient(180deg, rgba(255, 166, 252, 0.4) 0%, rgba(255, 148, 224, 0.4) 35%, rgba(255, 89, 199, 0.4) 100%), url(/images/Blackpink-Rose-cute.jpg); }
+        .card__side--front-img__jisoo {
+          background-image: linear-gradient(180deg, rgba(255, 166, 252, 0.4) 0%, rgba(255, 148, 224, 0.4) 35%, rgba(255, 89, 199, 0.4) 100%), url(/images/Blackpink-Jisoo-cute.jpg); }
+      .card__side--front-text {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        background-color: rgba(255, 255, 255, 0.61);
+        bottom: 0;
+        text-align: center;
+        border-radius: 0 0 10px 10px; }
+    .card__side--back {
+      background-color: black;
+      transform: rotateY(-180deg);
+      transition: all 0.5s;
+      color: white; }
+      .card__side--back-img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        background-size: cover; }
+        .card__side--back-img__jennie {
+          background-image: url(/images/Blackpink-Jennie-badass.jpg); }
+        .card__side--back-img__lisa {
+          background-image: url(/images/Blackpink-Lisa-badass.jpg); }
+        .card__side--back-img__rose {
+          background-image: url(/images/Blackpink-Rose-badass.jpg); }
+        .card__side--back-img__jisoo {
+          background-image: url(/images/Blackpink-Jisoo-badass.jpg); }
+      .card__side--back-text {
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        background-color: rgba(255, 255, 255, 0.61);
+        bottom: 0;
+        text-align: center;
+        border-radius: 0 0 10px 10px; }
+  .card:hover .card__side--front {
+    transform: rotateY(180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+
+.section-about {
+  padding: 3rem 0;
+  background-color: #393e46; }
+  .section-about__contents {
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    display: grid;
+    grid-template-columns: [about-img-start] 50% [about-img-end about-text-start] 50% [about-text-end];
+    align-items: center; }
+
+.section-members__container {
+  height: 90vh;
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.about__text {
+  height: max-content;
+  width: 80%;
+  margin: auto; }
+
+.about__img {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .about__img img {
+    height: 70%; }

@@ -1,0 +1,44 @@
+.section {
+	&-about {
+		padding: 3rem 0;
+		background-color: #393e46;
+		&__contents {
+			height: 80vh;
+			width: 80vw;
+			margin: auto;
+			display: grid;
+			grid-template-columns: [about-img-start] 50% [about-img-end about-text-start] 50% [about-text-end];
+			align-items: center;
+		}
+	}
+	&-members {
+		&__container {
+			height: 90vh;
+			width: 90vw;
+			margin: auto;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+		}
+	}
+	&-albums {
+	}
+	&-music {
+	}
+}
+.about__text {
+	height: max-content;
+	width: 80%;
+	margin: auto;
+}
+.about__img {
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	img {
+		height: 70%;
+	}
+}

@@ -1,0 +1,46 @@
+.header {
+	height: 120vh;
+	background-image: radial-gradient(
+			circle,
+			rgba($color-primary-light-1, 0.3) 20%,
+			rgba($color-primary-light-2, 0.25) 40%,
+			rgba($color-primary, 0.25) 60%,
+			rgba($color-primary-dark, 0.25) 70%,
+			rgba($color-black, 0.4) 100%
+		),
+		url(/images/Blackpinkheroimage.jpg);
+	background-size: cover;
+	background-position: 50% 40%;
+	position: static;
+	&__logo-container {
+		height: 8vw;
+		width: 25vw;
+		margin: auto;
+		background-color: black;
+		-webkit-mask-image: url(/images/BLACKPINK-Logo-Pink-PNG-removebg-preview-removebg-preview.png);
+		-webkit-mask-size: cover;
+		mask-image: url(/images/BLACKPINK-Logo-Pink-PNG-removebg-preview-removebg-preview.png);
+		mask-size: cover;
+		box-shadow: 10rem 20rem pink;
+		margin-top: -1rem;
+	}
+}
+
+.nav-bar {
+	height: 3.5rem;
+	width: 100%;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 1rem;
+}
+
+.logo-container {
+	height: 3.5rem;
+	margin-left: 3rem;
+}
+.logo-img {
+	height: 100%;
+}
