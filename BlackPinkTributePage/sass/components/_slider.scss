@@ -1,0 +1,38 @@
+.slider {
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	align-items: center;
+
+	&__nav {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+}
+.slide {
+	margin-top: 1rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	&--current {
+	}
+	&__mover {
+	}
+	&__title {
+		color: white;
+		font-family: $font-default;
+	}
+}
+.zoomer {
+	margin: auto;
+	text-align: center;
+	height: 250px;
+	margin: 3rem;
+	&__image {
+		height: 100%;
+		object-fit: cover;
+	}
+}

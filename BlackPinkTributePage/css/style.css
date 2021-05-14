@@ -75,7 +75,7 @@ body {
   margin-top: 10rem !important; }
 
 .u-margin-top-big {
-  margin-top: 8rem !important; }
+  margin-top: 4rem !important; }
 
 .u-margin-top-medium {
   margin-top: 3rem !important; }
@@ -132,6 +132,21 @@ body {
 
 .logo-img {
   height: 100%; }
+
+.button {
+  background-color: transparent;
+  border: none;
+  height: 25px;
+  width: 25px; }
+  .button:not(:last-child) {
+    margin-right: 3rem; }
+  .button svg {
+    height: 100%;
+    width: 100%;
+    fill: #ffa6fc; }
+    .button svg:hover {
+      fill: white;
+      cursor: pointer; }
 
 .card {
   margin-top: 3rem;
@@ -209,6 +224,35 @@ body {
   .card:hover .card__side--back {
     transform: rotateY(0); }
 
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: center; }
+  .slider__nav {
+    display: inline-block; }
+    .slider__nav:not(:last-child) {
+      margin-right: 2rem; }
+
+.slide {
+  margin-top: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between; }
+  .slide__title {
+    color: white;
+    font-family: "Open Sans", sans-serif; }
+
+.zoomer {
+  margin: auto;
+  text-align: center;
+  height: 250px;
+  margin: 3rem; }
+  .zoomer__image {
+    height: 100%;
+    object-fit: cover; }
+
 .section-about {
   padding: 3rem 0;
   background-color: #393e46; }
@@ -227,6 +271,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap; }
+
+.section-discography {
+  height: 100vh;
+  background-color: #393e46; }
 
 .about__text {
   height: max-content;
