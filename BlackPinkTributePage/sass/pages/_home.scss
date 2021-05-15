@@ -1,9 +1,9 @@
 .section {
+	padding: 3rem 0 6rem 0;
 	&-about {
 		padding: 3rem 0;
 		background-color: #393e46;
 		&__contents {
-			height: 80vh;
 			width: 80vw;
 			margin: auto;
 			display: grid;
@@ -13,7 +13,6 @@
 	}
 	&-members {
 		&__container {
-			height: 90vh;
 			width: 90vw;
 			margin: auto;
 			display: flex;
@@ -22,7 +21,6 @@
 		}
 	}
 	&-discography {
-		height: 100vh;
 		background-color: #393e46;
 	}
 	&-music {
@@ -40,7 +38,11 @@
 	flex-direction: column;
 	justify-content: space-between;
 
-	img {
-		height: 70%;
+	&--container {
+		width: 100%;
+		object-fit: cover;
+		img {
+			height: 100%;
+		}
 	}
 }

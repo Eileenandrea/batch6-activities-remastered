@@ -68,7 +68,9 @@
 				<div class="section-about__contents">
 					<div class="about__img">
 						<h1 class="heading-secondary-h2">About Blackpink</h1>
-						<img src="./images/blackpink-image-1.png" alt="" />
+						<div class="about__img--container">
+							<img src="./images/blackpink-image-1.png" alt="" />
+						</div>
 					</div>
 					<div class="about__text">
 						<p class="paragraph paragraph--white">
@@ -90,7 +92,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-members">
+			<section class="section section-members">
 				<h1 class="heading-secondary-h2">Members</h1>
 				<div class="section-members__container">
 					<div class="card">
@@ -197,35 +199,122 @@
 					</div>
 				</div>
 			</section>
-			<section class="section-discography slider">
-				<h1 class="heading-primary-h1">Discography</h1>
-				<div class="slide slide--current" data-content="content-1">
-					<div class="slide__mover">
-						<div class="zoomer flex-center">
-							<img
-								class="zoomer__image"
-								src="/images/Square_One_Cover.jpg"
-								alt="iPhone"
-							/>
+			<section class="section section-discography slider">
+				<h1 class="heading-primary-h1 u-margin-bottom-top">Discography</h1>
+				<div class="slider__container">
+					<div class="slide slide--current" data-content="content-1">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/Square_One_Cover.jpg"
+									alt="iPhone"
+								/>
+							</div>
 						</div>
+						<h2 class="slide__title">Sqaure One</h2>
 					</div>
-					<h2 class="slide__title">Sqaure One</h2>
+					<div class="slide" data-content="content-2">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/BLACKPINK_Square_Two_cover_art.png"
+									alt="Sqaure two"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">Sqaure Two</h2>
+					</div>
+					<div class="slide" data-content="content-3">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/Blackpink.jpg"
+									alt="Blackpink"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">Blackpink</h2>
+					</div>
+					<div class="slide" data-content="content-4">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/square up.jpg"
+									alt="Square Up"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">Square Up</h2>
+					</div>
+					<div class="slide" data-content="content-5">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/Kill_This_Love_-_Pink+Digital_Version.jpg"
+									alt="Kill this love"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">Kill This love</h2>
+					</div>
+					<div class="slide" data-content="content-6">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/Blackpink_-_How_You_Like_That.png"
+									alt="How You Like That"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">How you Like That</h2>
+					</div>
+					<div class="slide" data-content="content-7">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/Blackpink_&_Selena_Gomez_-_Ice_Cream.png"
+									alt="Ice Cream(with Selena Gomez)"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">Ice Cream (with Selena Gomez)</h2>
+					</div>
+					<div class="slide" data-content="content-8">
+						<div class="slide__mover">
+							<div class="zoomer flex-center">
+								<img
+									class="zoomer__image"
+									src="/images/BLACKPINK_The_Album_digital_album_cover.png"
+									alt="The Album"
+								/>
+							</div>
+						</div>
+						<h2 class="slide__title">The Album</h2>
+					</div>
 				</div>
-				<nav class="slider__nav u-margin-top-big">
+
+				<nav class="slider__nav u-margin-top-medium">
 					<button class="button button--nav-prev">
-						<svg class="seach__icon">
+						<svg class="left__icon">
 							<use
 								xlink:href="/images/sprite.svg#icon-arrow-left2"
 							></use>
 						</svg>
 					</button>
-					<button class="button button--nav-prev">
-						<svg class="seach__icon">
+					<button class="button button--nav-search">
+						<svg class="search__icon">
 							<use xlink:href="/images/sprite.svg#icon-search"></use>
 						</svg>
 					</button>
-					<button class="button button--nav-prev">
-						<svg class="seach__icon">
+					<button class="button button--nav-next">
+						<svg class="left__icon">
 							<use
 								xlink:href="/images/sprite.svg#icon-arrow-right2"
 							></use>
@@ -233,7 +322,33 @@
 					</button>
 				</nav>
 			</section>
+			<section class="content diplay-modal content-discography">
+				<div class="content__item" id="content-1">
+					<img
+						class="content__item-img rounded-right"
+						src="images/Square_One_Cover.jpg"
+						alt="Apple Watch Content"
+					/>
+					<button class="button button--close">
+						<svg class="left__icon">
+							<use
+								xlink:href="/images/sprite.svg#icon-cancel-circle"
+							></use>
+						</svg>
+					</button>
+					<div class="content__item-inner">
+						<h2>Square One</h2>
+
+						<p>
+							<a href="https://www.apple.com/iphone-6/technology/"
+								>Learn more about this technology ⟶</a
+							>
+						</p>
+					</div>
+				</div>
+			</section>
 			<section class="section-music"></section>
 		</main>
+		<script type="module" src="/js/script.js"></script>
 	</body>
 </html>
