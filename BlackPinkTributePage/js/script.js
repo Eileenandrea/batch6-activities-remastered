@@ -6,6 +6,7 @@ const slides = [...document.querySelectorAll(".slide")];
 const content = document.querySelector(".content");
 const btnClose = document.querySelector(".button--close");
 let current = 0;
+let activemodal;
 console.log(slides);
 btnPrev.addEventListener("click", function () {
 	navigate("left");
@@ -21,8 +22,14 @@ btnSearch.addEventListener("click", displayModal);
 btnClose.addEventListener("click", closemodal);
 function closemodal() {
 	content.classList.remove("display-modal");
+	setTimeout(() => {
+		activemodal.classList.remove("active");
+	}, 1000);
 }
 function displayModal() {
+	//add active class to current content
+	activemodal = document.getElementById(`${slides[current].dataset.content}`);
+	activemodal.classList.add("active");
 	content.classList.add("display-modal");
 }
 function navigate(dir) {

@@ -10,6 +10,10 @@
 		color: pink;
 		padding: 1rem 0;
 	}
+	span {
+		font-size: 1.5rem;
+		margin-top: -2rem;
+	}
 }
 .heading-secondary-h2 {
 	font-family: $font-family-BP-Header;
@@ -50,4 +54,8 @@
 	font-weight: 700;
 	letter-spacing: 0.05rem;
 	color: rgb(46, 46, 46);
+}
+.heading-h4 {
+	font-family: $font-default;
+	font-size: 0.8rem;
 }

@@ -21,6 +21,9 @@ body {
     background-color: black;
     color: pink;
     padding: 1rem 0; }
+  .heading-primary-h1 span {
+    font-size: 1.5rem;
+    margin-top: -2rem; }
 
 .heading-secondary-h2 {
   font-family: "PRIMETIME", sans-serif;
@@ -60,6 +63,10 @@ body {
   letter-spacing: 0.05rem;
   color: #2e2e2e; }
 
+.heading-h4 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem; }
+
 .u-center-text {
   text-align: center !important; }
 
@@ -68,6 +75,9 @@ body {
 
 .u-margin-bottom-medium {
   margin-bottom: 3rem !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem !important; }
 
 .u-margin-bottom-top {
   margin-bottom: 4rem !important; }
@@ -275,20 +285,66 @@ body {
     object-fit: cover; }
 
 .content {
+  padding: 0 0 2rem 0;
   height: 100vh;
   width: 100vw;
-  background-color: #6d6d6d;
+  background-color: #393e46;
   overflow: hidden;
   position: fixed;
   top: 0%;
   display: block;
   transform: scale(0);
   transition: all 0.5s; }
-  .content__item-img {
-    height: 300px; }
+  .content__item {
+    margin: 1rem 5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: none; }
+    .content__item-inner {
+      min-width: 750px;
+      margin-right: 20px;
+      text-align: center;
+      height: 90vh; }
+    .content__item-img {
+      height: 300px;
+      min-width: 300px;
+      margin-top: 5rem; }
 
 .display-modal {
   transform: scale(1); }
+
+.album__items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .album__items-container {
+    height: 80%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; }
+    .album__items-container::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; }
+
+.album__item-link {
+  text-decoration: none; }
+  .album__item-link:link, .album__item-link:visited {
+    font-size: 1.3rem;
+    font-family: "PRIMETIME", sans-serif;
+    color: white; }
+  .album__item-link span {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    padding-right: 3rem; }
+
+.active {
+  display: flex; }
+
+hr {
+  width: 75%;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .section {
   padding: 3rem 0 6rem 0; }
