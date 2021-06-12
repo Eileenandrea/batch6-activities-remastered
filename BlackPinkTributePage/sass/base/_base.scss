@@ -5,8 +5,27 @@
 	padding: 0;
 	box-sizing: inherit;
 }
-body {
+html {
 	font-size: 62.5%;
+
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
+}
+body {
+	width: 100vw;
 	box-sizing: border-box;
+	max-width: 100%;
+	overflow: hidden;
+}
+html {
+	max-width: 100%;
 	overflow-x: hidden;
 }

@@ -9,6 +9,11 @@
 			display: grid;
 			grid-template-columns: [about-img-start] 50% [about-img-end about-text-start] 50% [about-text-end];
 			align-items: center;
+
+			@include respond(tab-land) {
+				display: flex;
+				flex-direction: column;
+			}
 		}
 	}
 	&-members {
