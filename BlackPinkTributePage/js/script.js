@@ -1,4 +1,3 @@
-import anime from "../node_modules/animejs/lib/anime.es.js";
 const btnPrev = document.querySelector(".button--nav-prev");
 const btnNext = document.querySelector(".button--nav-next");
 const btnSearch = document.querySelector(".button--nav-search");
