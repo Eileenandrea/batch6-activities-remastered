@@ -407,3 +407,9 @@ hr {
     object-fit: cover; }
     .about__img--container img {
       height: 100%; }
+.footer{
+  padding: 2rem 0rem;
+  text-align: center;
+  background-color: #2e2e2e;
+  color: white;
+}
