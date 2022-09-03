@@ -7,7 +7,7 @@ export const KEY = "f71ada5a-43fe-44aa-a859-7cbc29154576";
 export const MODAL_CLOSE_SEC = 2.5;
 export const PETFINDER_KEY =
   "uQ2ZwPWg7tdlZZS4LOVlDpw0jaOb1ZCAZKVFUv70eRk1IyHsQf";
-export const PETFINDER_SECRET = "8s3ymCPOOO4WzzDmObqfCI2WHw92EqEilY2FOzwO";
+export const PETFINDER_SECRET = "wg7M1jn5g3WfdKeTbAhmv16akyIuHGU9PxJHKyIo";
 export const OPTION_NO_TOKEN = {
   headers: {
     "X-API-KEY": "d54efa80-8806-4f44-828d-fc215287841a",
