@@ -1,17 +1,17 @@
 import { View } from "./View.js";
 
 class ResultsPreviewView extends View {
-	_parentElement = document.querySelector(".results");
-	_generateMarkup() {
-		const markup = this._data
-			.map((result, i) => {
-				return this._generateMarkupPreview(i);
-			})
-			.join("");
-		return markup;
-	}
-	_generateMarkupPreview(i) {
-		return `<li class="preview">
+  _parentElement = document.querySelector(".results");
+  _generateMarkup() {
+    const markup = this._data
+      .map((result, i) => {
+        return this._generateMarkupPreview(i);
+      })
+      .join("");
+    return markup;
+  }
+  _generateMarkupPreview(i) {
+    return `<li class="preview">
         <a href="#BREED-${this._data[i].name}" class="preview__link">
             <figure class="preview__fig">
             <div class="preview__fig--imgcontainer">
@@ -26,6 +26,6 @@ class ResultsPreviewView extends View {
             </div>
         </a>
     </li>`;
-	}
+  }
 }
 export default new ResultsPreviewView();

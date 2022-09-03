@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-		<link rel="stylesheet" href="./src/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
-		/>
-		<link
-			href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
-			rel="stylesheet"
-		/>
-		<script defer type="module" src="./src/js/controller.js"></script>
-	</head>
-	<body>
-		<div class="container__BREED">
-			<header class="header">
-				<div class="logo__container">
-					<img src="./src/img/logo.png" alt="" />
-				</div>
-				<nav class="nav__bar">
-					<ul class="nav__links">
-						<li class="nav__item">
-							<a href="#HOME" class="nav__link nav__link--home">
-								<button class="nav__btn nav__btn--home">home</button>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#ADOPT" class="nav__link">
-								<button class="nav__btn nav__btn--adopt">adopt</button>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#BREED" class="nav__link nav__link--breed">
-								<button class="nav__btn nav__btn--dogBreeds">
-									dog breeds
-								</button>
-							</a>
-						</li>
-						<li class="nav__item nav__item--bokmarks">
-							<button class="nav__btn nav__btn--home">bookmarks</button>
-							<div class="bookmarks_content">
-								<ul class="bookmarks__contents"></ul>
-							</div>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div class="dogbreed"></div>
-			<div class="search-results">
-				<div class="search-box-container">
-					<form class="search">
-						<input
-							type="text"
-							class="search__field"
-							placeholder="Search for Adorable Dogs"
-						/>
-						<button class="btn btn__search">search</button>
-					</form>
-				</div>
-				<div class="searchResults">
-					<ul class="results"></ul>
-				</div>
-				<div class="pagination">
-					<!-- <button class="btn--inline pagination__btn--prev">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.1/css/all.css"
+      rel="stylesheet"
+    />
+    <script defer type="module" src="./src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="container__BREED">
+      <header class="header">
+        <div class="logo__container">
+          <img src="./src/img/logo.png" alt="" />
+        </div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#HOME" class="nav__link nav__link--home">
+                <button class="nav__btn nav__btn--home">home</button>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#ADOPT" class="nav__link">
+                <button class="nav__btn nav__btn--adopt">adopt</button>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#BREED" class="nav__link nav__link--breed">
+                <button class="nav__btn nav__btn--dogBreeds">dog breeds</button>
+              </a>
+            </li>
+            <li class="nav__item nav__item--bokmarks">
+              <button class="nav__btn nav__btn--home">bookmarks</button>
+              <div class="bookmarks_content">
+                <ul class="bookmarks__contents"></ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="dogbreed"></div>
+      <div class="search-results">
+        <div class="search-box-container">
+          <form class="search">
+            <input
+              type="text"
+              class="search__field"
+              placeholder="Search for Adorable Dogs"
+            />
+            <button class="btn btn__search">search</button>
+          </form>
+        </div>
+        <div class="searchResults">
+          <ul class="results"></ul>
+        </div>
+        <div class="pagination">
+          <!-- <button class="btn--inline pagination__btn--prev">
 					  <svg class="search__icon">
 						<use href="src/img/icons.svg#icon-arrow-left"></use>
 					  </svg>
@@ -78,168 +76,166 @@
 						<use href="src/img/icons.svg#icon-arrow-right"></use>
 					  </svg>
 					</button> -->
-				</div>
-			</div>
-		</div>
+        </div>
+      </div>
+    </div>
 
-		<div class="container__ADOPT">
-			<header class="header">
-				<div class="logo__container">
-					<img src="./src/img/logo.png" alt="" />
-				</div>
-				<nav class="nav__bar">
-					<ul class="nav__links">
-						<li class="nav__item">
-							<a href="#HOME" class="nav__link nav__link--home">
-								<button class="nav__btn nav__btn--home">home</button>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#ADOPT" class="nav__link">
-								<button class="nav__btn nav__btn--adopt">adopt</button>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#BREED" class="nav__link nav__link--breed">
-								<button class="nav__btn nav__btn--dogBreeds">
-									dog breeds
-								</button>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div class="filter__container">
-				<form action="" class="filter">
-					<div class="filter__breed">
-						<div class="breedContainer">
-							<h3 class="clearform">Clear</h3>
-							<h2>Dog Breed</h2>
-							<div class="breedinputs">
-								<input
-									type="text"
-									class="breedlistsearch"
-									placeholder="Select Dog Breed"
-								/>
-								<i class="fa fa-chevron-down"></i>
-							</div>
-							<div class="breedFilter">
-								<ul class="breedFilter__list"></ul>
-							</div>
-						</div>
-					</div>
-					<div class="filter__gender">
-						<h3 class="label label__gender">Gender</h3>
-						<div class="divider"></div>
-						<ul class="filter__ul gender__ul">
-							<li>
-								<input
-									type="checkbox"
-									id="Gender-female"
-									name="Gender-female"
-									value="Female"
-								/>
-								<label for="Gender-female">Female</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Gender-male"
-									name="Gender-male"
-									value="Male"
-								/>
-								<label for="Gender-male">Males</label>
-							</li>
-						</ul>
-					</div>
-					<div class="filter__age">
-						<h3 class="label label__age">Age</h3>
-						<div class="divider"></div>
-						<ul class="filter__ul age__ul">
-							<li>
-								<input
-									type="checkbox"
-									id="Age-puppy"
-									name="Age-puppy"
-									value="puppy"
-								/>
-								<label for="Age-puppy">Puppy</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Age-young"
-									name="Age-young"
-									value="young"
-								/>
-								<label for="Age-young">Young</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Age-adult"
-									name="Age-adult"
-									value="adult"
-								/>
-								<label for="Age-adult">Adult</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Age-senior"
-									name="Age-senior"
-									value="senior"
-								/>
-								<label for="Age-senior">Senior</label>
-							</li>
-						</ul>
-					</div>
-					<div class="filter__size">
-						<h3 class="label label__size">Size</h3>
-						<div class="divider"></div>
-						<ul class="filter__ul gender__ul">
-							<li>
-								<input
-									type="checkbox"
-									id="Size-small"
-									name="Size-small"
-									value="small"
-								/>
-								<label for="Size-small">Small (0 - 25 Ibs)</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Size-medium"
-									name="Size-medium"
-									value="medium"
-								/>
-								<label for="Size-medium">Medium (26 - 60 Ibs)</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Size-large"
-									name="Size-large"
-									value="large"
-								/>
-								<label for="Size-large">Large (61 - 100 Ibs)</label>
-							</li>
-							<li>
-								<input
-									type="checkbox"
-									id="Size-ExtraLarge"
-									name="Size-xlarge"
-									value="xlarge"
-								/>
-								<label for="Size-ExtraLarge"
-									>Extra Large (101 Ibs or more)</label
-								>
-							</li>
-						</ul>
-					</div>
+    <div class="container__ADOPT">
+      <header class="header">
+        <div class="logo__container">
+          <img src="./src/img/logo.png" alt="" />
+        </div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#HOME" class="nav__link nav__link--home">
+                <button class="nav__btn nav__btn--home">home</button>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#ADOPT" class="nav__link">
+                <button class="nav__btn nav__btn--adopt">adopt</button>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#BREED" class="nav__link nav__link--breed">
+                <button class="nav__btn nav__btn--dogBreeds">dog breeds</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="filter__container">
+        <form action="" class="filter">
+          <div class="filter__breed">
+            <div class="breedContainer">
+              <h3 class="clearform">Clear</h3>
+              <h2>Dog Breed</h2>
+              <div class="breedinputs">
+                <input
+                  type="text"
+                  class="breedlistsearch"
+                  placeholder="Select Dog Breed"
+                />
+                <i class="fa fa-chevron-down"></i>
+              </div>
+              <div class="breedFilter">
+                <ul class="breedFilter__list"></ul>
+              </div>
+            </div>
+          </div>
+          <div class="filter__gender">
+            <h3 class="label label__gender">Gender</h3>
+            <div class="divider"></div>
+            <ul class="filter__ul gender__ul">
+              <li>
+                <input
+                  type="checkbox"
+                  id="Gender-female"
+                  name="Gender-female"
+                  value="Female"
+                />
+                <label for="Gender-female">Female</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Gender-male"
+                  name="Gender-male"
+                  value="Male"
+                />
+                <label for="Gender-male">Males</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__age">
+            <h3 class="label label__age">Age</h3>
+            <div class="divider"></div>
+            <ul class="filter__ul age__ul">
+              <li>
+                <input
+                  type="checkbox"
+                  id="Age-puppy"
+                  name="Age-puppy"
+                  value="puppy"
+                />
+                <label for="Age-puppy">Puppy</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Age-young"
+                  name="Age-young"
+                  value="young"
+                />
+                <label for="Age-young">Young</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Age-adult"
+                  name="Age-adult"
+                  value="adult"
+                />
+                <label for="Age-adult">Adult</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Age-senior"
+                  name="Age-senior"
+                  value="senior"
+                />
+                <label for="Age-senior">Senior</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter__size">
+            <h3 class="label label__size">Size</h3>
+            <div class="divider"></div>
+            <ul class="filter__ul gender__ul">
+              <li>
+                <input
+                  type="checkbox"
+                  id="Size-small"
+                  name="Size-small"
+                  value="small"
+                />
+                <label for="Size-small">Small (0 - 25 Ibs)</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Size-medium"
+                  name="Size-medium"
+                  value="medium"
+                />
+                <label for="Size-medium">Medium (26 - 60 Ibs)</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Size-large"
+                  name="Size-large"
+                  value="large"
+                />
+                <label for="Size-large">Large (61 - 100 Ibs)</label>
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  id="Size-ExtraLarge"
+                  name="Size-xlarge"
+                  value="xlarge"
+                />
+                <label for="Size-ExtraLarge"
+                  >Extra Large (101 Ibs or more)</label
+                >
+              </li>
+            </ul>
+          </div>
 
-					<!-- 	<div class="filter__gender">
+          <!-- 	<div class="filter__gender">
 						<h2>Gender</h2>
 						<ul class="gender__choices">
 							<li>
@@ -267,18 +263,18 @@
 							</li>
 						</ul>
 					</div> -->
-					<div class="divider"></div>
+          <div class="divider"></div>
 
-					<button class="btn--filter effect01">
-						<span>Apply Filter</span>
-					</button>
-				</form>
-			</div>
+          <button class="btn--filter effect01">
+            <span>Apply Filter</span>
+          </button>
+        </form>
+      </div>
 
-			<div class="adoptresults__container">
-				<div class="adopt__results">
-					<ul class="adopt__results--ul">
-						<!-- 						<li class="adopt__results--li">
+      <div class="adoptresults__container">
+        <div class="adopt__results">
+          <ul class="adopt__results--ul">
+            <!-- 						<li class="adopt__results--li">
 							<div class="adopt__image--container">
 								<img src="https://dl5zpyw5k3jeb.cloudfront.net/photos/pets/51175894/1/?bust=1619015815&width=300" alt="">
 							</div>
@@ -293,11 +289,11 @@
 							</div>
 						</li>
  -->
-					</ul>
-				</div>
-				<div class="adopt__pagination">
-					<div class="pagination_nav">
-						<!-- 	<div class="pagination__prev">
+          </ul>
+        </div>
+        <div class="adopt__pagination">
+          <div class="pagination_nav">
+            <!-- 	<div class="pagination__prev">
 							<button class="btn__page">
 								<i class="fas fa-chevron-left"></i>
 							</button>
@@ -336,39 +332,37 @@
 									<i class="fas fa-chevron-right"></i>
 								</button>					
 						</div> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container__HOME active__page">
-			<header class="header">
-				<div class="logo__container">
-					<img src="./src/img/logo.png" alt="" />
-				</div>
-				<nav class="nav__bar">
-					<ul class="nav__links">
-						<li class="nav__item">
-							<a href="#HOME" class="nav__link nav__link--home">
-								<button class="nav__btn nav__btn--home">home</button>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#ADOPT" class="nav__link">
-								<button class="nav__btn nav__btn--adopt">adopt</button>
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#BREED" class="nav__link nav__link--breed">
-								<button class="nav__btn nav__btn--dogBreeds">
-									dog breeds
-								</button>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			<div class="home-Container"></div>
-		</div>
-		<div class="overlay"></div>
-	</body>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container__HOME active__page">
+      <header class="header">
+        <div class="logo__container">
+          <img src="./src/img/logo.png" alt="" />
+        </div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#HOME" class="nav__link nav__link--home">
+                <button class="nav__btn nav__btn--home">home</button>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#ADOPT" class="nav__link">
+                <button class="nav__btn nav__btn--adopt">adopt</button>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#BREED" class="nav__link nav__link--breed">
+                <button class="nav__btn nav__btn--dogBreeds">dog breeds</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="home-Container"></div>
+    </div>
+    <div class="overlay"></div>
+  </body>
 </html>
